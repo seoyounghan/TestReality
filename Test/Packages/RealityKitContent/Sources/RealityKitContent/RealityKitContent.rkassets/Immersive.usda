@@ -46,5 +46,19 @@ def Xform "Root"
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
+
+    def "________" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (-1.4477092, 2.3661481e-7, -2.0914638e-7)
+        }
+        prepend references = @고려_청.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.7492585, -0.6622777, 1.5789931e-7, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (-0.073886275, -0.1607908, -2.7176447)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
 }
 
